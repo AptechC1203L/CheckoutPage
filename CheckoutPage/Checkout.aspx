@@ -9,11 +9,23 @@
 <body>
     <form id="form1" runat="server">
     <div>
-
+        <asp:MultiView ID="checkoutMultiView" ActiveViewIndex="0" runat="server">
+            <asp:View runat="server">
+                <asp:Button Text="text" runat="server" />
+            </asp:View>
+            <asp:View runat="server">
+            aonehao
+            </asp:View>
+        </asp:MultiView>
+        
+<asp:Table ID="Table1" runat="server">
+</asp:Table>
     </div>
     <div>
-        <asp:Button ID="nextButton" runat="server" Text="Button" />
-        <asp:Button ID="prevButton" runat="server" Text="Button" />
+        <asp:Button ID="prevButton" runat="server" Text="Previous" 
+            onclick="prevButton_Click" />
+        <asp:Button ID="nextButton" runat="server" Text="Next" 
+            onclick="nextButton_Click" />
     </div>
     </form>
 </body>
